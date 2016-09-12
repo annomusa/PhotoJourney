@@ -92,9 +92,7 @@ public class CaptureFragment extends Fragment implements LocationListener{
                         Photo photo = new Photo();
                         photo.setTitle(mEditTextTitle.getText().toString());
                         photo.setStorageLocation(mImageUri);
-
                         photo.setGpsLocation(mLocation);
-
                         String tag1 = mEditTextTag1.getText().toString();
                         String tag2 = mEditTextTag2.getText().toString();
                         String tag3 = mEditTextTag3.getText().toString();

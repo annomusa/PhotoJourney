@@ -21,7 +21,6 @@ public class DataManager {
     public static final String TABLE_ROW_LOCATION_LAT = "gps_location_lat";
     public static final String TABLE_ROW_LOCATION_LONG = "gps_location_long";
 
-
     private static final String DB_NAME = "wis_db";
     private static final int DB_VERSION = 2;
     private static final String TABLE_PHOTOS = "wis_table_photos";
@@ -33,15 +32,8 @@ public class DataManager {
     public static final String TABLE_ROW_TAG = "tag";
 
     public DataManager(Context context){
-        Log.d("asdfasf", "DataManager: ");
         CustomSQLiteOpenHelper helper = new CustomSQLiteOpenHelper(context);
         db = helper.getWritableDatabase();
-
-//        (mCursor.getString(mCursor.getColumnIndex(DataManager.TABLE_ROW_URI)));
-//        Cursor c = db.rawQuery("SELECT " + TABLE_ROW_ID + ", " + TABLE_ROW_TITLE + " FROM " + TABLE_PHOTOS, null);
-//        c.moveToFirst();
-//        Log.d("DataManager: ", c.getString(c.getColumnIndex(TABLE_ROW_URI)));
-
     }
 
     public void addPhoto(Photo photo){
